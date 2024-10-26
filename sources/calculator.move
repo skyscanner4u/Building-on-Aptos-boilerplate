@@ -12,9 +12,9 @@ module metaschool::calculator_l05
     {
         if (!exists<Message>(signer::address_of(account))){
             let message = Message {
-                my_message : utf8(b"Hi, its my first dApp on the Aptos ecosystem")            
+                my_message : utf8(b"Hi, its my first dApp on the Aptos ecosystem")
             };
-            move_to(account,message);    
+            move_to(account,message);
         }
     }
 
